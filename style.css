@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+
+
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+p {
+    /* font-family: 'Lora', serif; */
+    font-size: 1.1em;
+    margin-bottom: 20px;
+
+}
+
+
+.btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #d81b60;
+    transform: scale(1.05);
+}
+
+
+header {
+    background-image: url('./img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+/* Общие стили для секций */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section#about-us p {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    font-size: 1.2em;
+}
+
+/* Стили для секции "Почему выбирают нас" */
+.why-choose-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why-choose-us div {
+    flex: 1;
+    margin: 20px;
+    min-width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.why-choose-us div:hover {
+    transform: translateY(-10px);
+}
+
+.why-choose-us h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #e91e63;
+}
+
+.why-choose-us p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Стили для секции "Отзывы" */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reviews div {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.reviews div:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для секции "Бронирование" */
+#booking {
+    background-color: #fff0f5;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+#booking p {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Виджет Instagram */
+.instagram-widget h2 {
+    font-size: 2.5em;
+    color: #e91e63;
+    margin-bottom: 40px;
+}
