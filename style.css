@@ -42,7 +42,7 @@ table {
 	border-spacing: 0;
 }
 body {
-    font-family: "Roboto";
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     color: #4a4a4a;
@@ -95,7 +95,7 @@ p {
 
 
 header {
-    background-image: url('./img/main.jpg');
+    background-image: url('./img/main1.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -106,6 +106,7 @@ header {
 }
 
 header h1 {
+    margin-top: 120px;
     font-size: 4em;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -126,9 +127,10 @@ section {
 
 section#about-us p {
     max-width: 900px;
-    margin: 0 auto 40px auto;
+
     font-size: 1.2em;
 }
+
 
 /* Стили для секции "Почему выбирают нас" */
 .why-choose-us {
@@ -186,8 +188,9 @@ section#about-us p {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для секции "Бронирование" */
+
 #booking {
+    margin-top: 50px;
     background-color: #fff0f5;
     text-align: center;
     padding: 80px 20px;
@@ -219,4 +222,15 @@ footer p {
     font-size: 2.5em;
     color: #e91e63;
     margin-bottom: 40px;
+}
+.divider-image {
+    display: flex;
+    justify-content: center;
+}
+
+.divider-image img {
+    width: 55svw;
+    height: auto;
+    display: block;
+    border-radius: 30px;
 }
