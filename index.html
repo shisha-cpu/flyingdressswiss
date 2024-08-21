@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number 1 Flying Dress Photoshoot in Switzerland</title>
+    <title>flyingdressswiss</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -81,17 +81,34 @@
     <section id="booking">
         <h2>Book Your Dream Photoshoot Today</h2>
         <p>Ready to create unforgettable memories? Whether it's a solo session, a mother-daughter moment, or a couple’s experience, FlyDress Swiss is here to make your vision a reality.</p>
-        <a href="#contact" class="btn">Book Now</a>
+<button id="openModal" class="btn">Book Now</button>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Book Your Dream Photoshoot</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+
     </section>
 
-    <div class="instagram-widget">
-        <h2>Follow on Instagram</h2>
-       
+    <div class="instagram-widget" id="contact">
+        <h2>Follow us on Instagram</h2>
+        <a href="https://www.instagram.com/your-instagram-profile/" target="_blank" class="instagram-link">Follow on Instagram</a>
     </div>
-
+    
     <footer>
         <p>&copy; 2024 FlyDress Swiss. All rights reserved.</p>
     </footer>
-
+    <script src="app.js"></script>
 </body>
 </html>
