@@ -70,7 +70,7 @@ h3 {
 
 p {
     /* font-family: 'Lora', serif; */
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
     margin-bottom: 20px;
 
 }
@@ -93,21 +93,40 @@ p {
     transform: scale(1.05);
 }
 
-
 header {
-    background-image: url('./img/main1.jpg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    height: 45vh; /* Убедитесь, что заголовок занимает всю высоту окна */
     color: #fff;
     text-align: center;
     padding: 120px 20px;
-    position: relative;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+header .header-text {
+    position: relative;
+    z-index: 20; /* Чтобы текст был поверх изображений */
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.header-bg.active {
+    opacity: 1;
 }
 
 header h1 {
     margin-top: 120px;
-    font-size: 4em;
+    font-size: 5em;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 3px;
@@ -117,7 +136,16 @@ header p {
     font-size: 1.5em;
     margin-bottom: 50px;
 }
-
+.header-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */
+    z-index: 10;
+}
 /* Общие стили для секций */
 section {
     padding: 60px 20px;
@@ -128,17 +156,45 @@ section {
 section#about-us p {
     max-width: 900px;
 
-    font-size: 1.2em;
+
 }
 
-
+.about-container{
+    display: flex;
+  
+}
+.about-img img{
+    max-width: 500px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.about-text{
+    font-size: 25px;
+}
+@media (max-width : 1000px ) {
+    .about-container{
+        display: block;
+    }
+    .about-img img{
+        max-width: 500px;
+        width: 80svw;
+   
+    }
+    .about-img {
+        margin:  0 auto;
+    }
+}
 /* Стили для секции "Почему выбирают нас" */
 .why-choose-us {
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.why-choose-us img{
+    max-width: 150px;
 
+}
 .why-choose-us div {
     flex: 1;
     margin: 20px;
@@ -323,5 +379,19 @@ html {
     }
     .divider-image img {
         width: 85svw;
+    }
+}
+
+.afert{
+    text-align: center;
+}
+.photo{display: flex;}
+.photo img{
+    width: 100svw;
+}
+@media (max-width : 1000px) {
+    .photo img{
+        width: 90svw;
+        margin:  0 auto
     }
 }

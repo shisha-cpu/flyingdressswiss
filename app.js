@@ -52,3 +52,30 @@ document.getElementById('bookingForm').onsubmit = function(event) {
         alert('There was an error sending your request. Please try again.');
     });
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    const images = [
+        './img/slider/1.jpg',
+        './img/slider/2.jpg',
+        './img/slider/3.jpg',
+        './img/slider/4.jpg',
+
+    ];
+
+    const header = document.querySelector('header');
+    images.forEach((src, index) => {
+        const div = document.createElement('div');
+        div.classList.add('header-bg');
+        if (index === 0) div.classList.add('active'); // Первое изображение активно
+        div.style.backgroundImage = `url(${src})`;
+        header.appendChild(div);
+    });
+
+    let current = 0;
+    const backgrounds = document.querySelectorAll('.header-bg');
+    setInterval(() => {
+        backgrounds[current].classList.remove('active');
+        current = (current + 1) % backgrounds.length;
+        backgrounds[current].classList.add('active');
+    }, 5000); 
+});
