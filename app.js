@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         './img/slider/1.jpg',
         './img/slider/2.jpg',
         './img/slider/3.jpg',
-        './img/slider/4.jpg',
+
 
     ];
 

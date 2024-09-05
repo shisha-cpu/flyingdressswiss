@@ -387,7 +387,8 @@ html {
 }
 .photo{display: flex;}
 .photo img{
-    width: 100svw;
+    width: 90svw;
+    margin:  0 auto;
 }
 @media (max-width : 1000px) {
     .photo img{
