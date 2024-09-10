@@ -183,6 +183,12 @@ section#about-us p {
     .about-img {
         margin:  0 auto;
     }
+    .about-text{
+        font-size: 1.2em;
+    }
+    .about-btn{
+        margin-bottom: 10px;
+    }
 }
 /* Стили для секции "Почему выбирают нас" */
 .why-choose-us {
@@ -192,7 +198,7 @@ section#about-us p {
     justify-content: space-between;
 }
 .why-choose-us img{
-    max-width: 150px;
+    max-width: 130px;
 
 }
 .why-choose-us div {
