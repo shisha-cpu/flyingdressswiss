@@ -193,23 +193,26 @@ section#about-us p {
 /* Стили для секции "Почему выбирают нас" */
 .why-choose-us {
     display: flex;
-    text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
 }
-.why-choose-us img{
-    max-width: 130px;
 
+.why-choose-us img {
+    max-width: 60px;
+    margin-bottom: 15px;
+    max-height: 50px;
 }
+
 .why-choose-us div {
-    flex: 1;
+    flex: 1 1 45%; /* Устанавливаем ширину блока примерно 45% */
     margin: 20px;
-    min-width: 280px;
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    max-width: 40%; /* Максимальная ширина блока */
 }
 
 .why-choose-us div:hover {
@@ -226,6 +229,15 @@ section#about-us p {
     font-size: 1.1em;
     color: #666;
 }
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .why-choose-us div {
+        flex: 1 1 100%; /* Блоки растягиваются на всю ширину экрана */
+        max-width: 100%; /* Убираем ограничение по ширине */
+    }
+}
+
 
 /* Стили для секции "Отзывы" */
 .reviews {
@@ -407,4 +419,11 @@ html {
     .none-img{
         display: none;
     }
+}
+
+.why-choose-us-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
